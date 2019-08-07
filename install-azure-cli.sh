@@ -40,7 +40,7 @@ if [[ -d ${VENV_PATH} ]] && [[ ${VENV_PATH} != "/" ]]; then
 fi
 
 $(${PYTHON_COMMAND} -m venv ${VENV_PATH})
-source ${VENV_PATH}/bin/activate #&& \
+source ${VENV_PATH}/bin/activate && \
    pip install --upgrade pip && \
    pip install azure-cli
 
